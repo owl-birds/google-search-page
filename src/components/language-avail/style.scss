@@ -1,0 +1,27 @@
+.lang-avail-wrappers {
+  height: fit-content;
+  align-self: start;
+  section {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.8rem;
+    .desc {
+      width: fit-content;
+      justify-self: end;
+    }
+    .choices {
+      width: fit-content;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      a {
+        color: #8ab4f8;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.footer {
+  background-color: #171717;
+  color: rgba(153, 153, 153, 0.87);
+  height: fit-content;
+  align-self: end;
+  font-size: 0.95rem;
+  .country {
+    padding: 15px 25px;
+  }
+  .links-wrapper {
+    display: grid;
+    grid-template-columns: 4.5fr 2fr;
+    padding: 15px 20px;
+    border-top: 0.1px solid rgba(153, 153, 153, 0.87);
+
+    .links {
+      justify-self: center;
+      align-self: center;
+      a {
+        color: rgba(153, 153, 153, 0.87);
+        text-decoration: none;
+        padding: 5px 10px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
