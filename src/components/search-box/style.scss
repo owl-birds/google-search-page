@@ -6,6 +6,9 @@
       display: grid;
       align-items: center;
       justify-items: center;
+      #mic-icon:hover {
+        cursor: pointer;
+      }
       > div {
         padding: 10px;
         border-radius: 50px;

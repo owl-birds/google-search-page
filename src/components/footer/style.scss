@@ -14,8 +14,8 @@
     border-top: 0.1px solid rgba(153, 153, 153, 0.87);
 
     .links {
-      justify-self: center;
-      align-self: center;
+      //   justify-self: center;
+      //   align-self: center;
       a {
         color: rgba(153, 153, 153, 0.87);
         text-decoration: none;
@@ -24,6 +24,9 @@
       a:hover {
         text-decoration: underline;
       }
+    }
+    .links:nth-child(2) {
+      justify-self: end;
     }
   }
 }

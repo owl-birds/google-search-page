@@ -1,5 +1,22 @@
 import "./style.scss";
+// types
+import { ChangeEvent, KeyboardEvent, useRef, useState } from "react";
 const SearchBox = () => {
+  // const inputRef = useRef<null | HTMLInputElement>(null);
+  // const [inputString, setInputString] = useState("");
+  const searchHandleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    console.log(event.target.value);
+    console.log(encodeURIComponent(event.target.value));
+    console.log(window.location.href);
+    // console.log(inputRef.current?.value);
+    // make a server to return the encoded url
+    //    so we can use it as an url
+    //   cause for ex we cant use spaces in utl
+    //   use encodeURIComponent
+    // return https://www.google.com/search?q=search-this-things
+  };
+  // to know when the user enter the search
+  const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {};
   return (
     <div className="search-box">
       <section>
@@ -14,12 +31,17 @@ const SearchBox = () => {
                 <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
               </svg>
             </div>
-            <input type="text" />
+            <input
+              onChange={searchHandleChange}
+              onKeyDown={handleKeyDown}
+              type="text"
+            />
             <div className="svgs">
               <svg
                 focusable="false"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
+                id="mic-icon"
               >
                 <path
                   fill="#4285f4"
