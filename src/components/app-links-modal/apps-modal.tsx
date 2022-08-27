@@ -1,6 +1,8 @@
+// appss list
+
 import "./style.scss";
 const AppsModal = () => {
-  return <div>AppsModal</div>;
+  return <div className="modal">AppsModal</div>;
 };
 
 export default AppsModal;

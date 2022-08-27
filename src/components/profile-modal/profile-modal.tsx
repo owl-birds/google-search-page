@@ -1,6 +1,6 @@
 import "./style.scss";
 const ProfileModal = () => {
-  return <div>ProfileModal</div>;
+  return <div className="modal">ProfileModal</div>;
 };
 
 export default ProfileModal;
