@@ -1,6 +1,7 @@
+@use "../../common-styles/var";
 .top-bar {
   display: grid;
-  height: 50px;
+  height: var.$top_bar_height;
   .right-side-links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

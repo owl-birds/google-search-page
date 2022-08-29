@@ -1,0 +1,57 @@
+// general
+$bg_color: #202124;
+$general_text_color: #bdc1c6;
+
+// top bar
+$top_bar_height: 50px;
+
+// modals
+$modal_radius: 10px;
+$modal_bg_color: #2b2d30;
+$modal_width: 328px;
+$modal_height: 436px;
+// apps modal
+$app_hover_color: #28292d;
+
+// GENERAL
+
+// MODALS
+@mixin modal {
+  width: $modal_width;
+  height: $modal_height;
+  background-color: $modal_bg_color;
+  border-radius: $modal_radius;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: absolute;
+  padding: 20px;
+  overflow-y: scroll;
+}
+@mixin modal_scroll {
+  /* width */
+  .modal::-webkit-scrollbar {
+    width: 17px;
+  }
+
+  /* Track */
+  .modal::-webkit-scrollbar-track {
+    background: #2b2d30;
+    border-radius: 100px;
+  }
+
+  /* Handle */
+  .modal::-webkit-scrollbar-thumb {
+    background: rgb(100, 100, 100);
+    border-radius: 50px;
+    background-clip: padding-box;
+    border: 5px solid rgba(0, 0, 0, 0);
+  }
+
+  /* Handle on hover */
+  .modal::-webkit-scrollbar-thumb:hover {
+    // background: #555;
+  }
+}
+// APPS
+@mixin app_hover {
+  background-color: $app_hover_color;
+}

@@ -1,0 +1,40 @@
+@use "../../common-styles/var";
+.apps-modal {
+  @include var.modal;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: start;
+  // display: none;
+  justify-self: end;
+  margin-right: 15px;
+  margin-top: var.$top_bar_height + 12.5px;
+  // display: none;
+}
+// scroll style
+@include var.modal_scroll;
+/*
+// /* width 
+.apps-modal::-webkit-scrollbar {
+  width: 17px;
+}
+
+// /* Track 
+.apps-modal::-webkit-scrollbar-track {
+  background: #2b2d30;
+  border-radius: 100px;
+}
+
+// /* Handle 
+.apps-modal::-webkit-scrollbar-thumb {
+  background: rgb(100, 100, 100);
+  border-radius: 50px;
+  background-clip: padding-box;
+  border: 5px solid rgba(0, 0, 0, 0);
+}
+
+// /* Handle on hover 
+.apps-modal::-webkit-scrollbar-thumb:hover {
+  // background: #555;
+}
+  */
