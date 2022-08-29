@@ -1,0 +1,28 @@
+.other-account {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 4fr;
+  padding: 5px 0;
+  color: #fff;
+  width: 100%;
+  .other-acc-img {
+    justify-self: end;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    img {
+      border-radius: 30px;
+    }
+  }
+  .other-acc-desc {
+    justify-self: start;
+    padding: 10px;
+    .email {
+      font-weight: 400;
+    }
+  }
+}
+.other-account:hover {
+  background-color: rgba(66, 66, 66, 0.87);
+  cursor: pointer;
+}

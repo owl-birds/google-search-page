@@ -1,0 +1,36 @@
+@use "../../../common-styles/var";
+.current-account {
+  display: grid;
+  justify-items: center;
+  gap: 15px;
+  .curr-acc-pp {
+    img {
+      width: 60px;
+      border-radius: 50px;
+    }
+  }
+  .curr-acc-desc {
+    display: grid;
+    justify-items: center;
+    gap: 2.5px;
+    color: #fff;
+    .name {
+    }
+    .email {
+      font-weight: 400;
+    }
+  }
+  .curr-acc-button {
+    button {
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 30px;
+      background-color: var.$modal_bg_color;
+      border: 0.1px solid rgba(153, 153, 153, 0.87);
+    }
+    button:hover {
+      background-color: rgba(66, 66, 66, 0.87);
+      cursor: pointer;
+    }
+  }
+}

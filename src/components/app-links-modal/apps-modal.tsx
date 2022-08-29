@@ -1,5 +1,3 @@
-import { ForwardedRef } from "react";
-
 // appss list
 const appsList = [
   { name: "Account", appUrl: "", imgUrl: "" },
@@ -19,6 +17,7 @@ const appsList = [
   { name: "Duo", appUrl: "", imgUrl: "" },
   { name: "Shopping", appUrl: "", imgUrl: "" },
 ];
+import { ForwardedRef } from "react";
 
 // components
 import App from "./components/app";
