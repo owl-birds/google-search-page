@@ -11,4 +11,57 @@
     border-top: 0.1px solid rgba(153, 153, 153, 0.87);
     border-bottom: 0.1px solid rgba(153, 153, 153, 0.87);
   }
+  .button-signout {
+    display: grid;
+    justify-items: center;
+    button {
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 10px;
+      background-color: var.$modal_bg_color;
+      border: 0.1px solid rgba(153, 153, 153, 0.87);
+    }
+    button:hover {
+      background-color: rgba(66, 66, 66, 0.87);
+      cursor: pointer;
+    }
+  }
+  .profile-modal-footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 20px;
+    border-top: 0.1px solid rgba(153, 153, 153, 0.87);
+    padding-top: 10px;
+    div {
+      width: fit-content;
+      button {
+        color: #fff;
+        border: none;
+        background-color: var.$modal_bg_color;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      button:hover {
+        background-color: rgba(66, 66, 66, 0.87);
+        cursor: pointer;
+      }
+      span {
+        padding: 1.25px 5px;
+      }
+      span:hover {
+        background-color: rgba(66, 66, 66, 0.87);
+      }
+    }
+    div:nth-child(1) {
+      justify-self: end;
+    }
+    div:nth-child(2) {
+      display: grid;
+      align-items: center;
+      justify-self: center;
+    }
+    div:nth-child(3) {
+      justify-self: start;
+    }
+  }
 }

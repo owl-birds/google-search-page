@@ -23,7 +23,7 @@ $app_hover_color: #28292d;
   border-radius: $modal_radius;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: absolute;
-  padding: 20px;
+  padding: 20px 0;
   overflow-y: scroll;
 }
 @mixin modal_scroll {

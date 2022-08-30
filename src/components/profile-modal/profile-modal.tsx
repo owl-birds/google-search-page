@@ -19,6 +19,16 @@ const accountData = [
     email: "currentaccount4@gmail.com",
     profileImgUrl: "",
   },
+  {
+    name: "current account 5",
+    email: "currentaccount5@gmail.com",
+    profileImgUrl: "",
+  },
+  {
+    name: "current account 6",
+    email: "currentaccount6@gmail.com",
+    profileImgUrl: "",
+  },
 ];
 
 import "./style.scss";
@@ -56,7 +66,17 @@ const ProfileModal = (props: Props) => {
       <section className="button-signout">
         <button>Sign out of all accounts</button>
       </section>
-      <section className="profile-modal-footer"></section>
+      <section className="profile-modal-footer">
+        <div>
+          <button>Privacy Policy</button>
+        </div>
+        <div>
+          <span>.</span>
+        </div>
+        <div>
+          <button>Terms of Service</button>
+        </div>
+      </section>
     </div>
   );
 };
